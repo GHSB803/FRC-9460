@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&family=DM+Sans:ital@1&family=Lora:ital@1&family=Noto+Sans+JP:wght@100&family=Pixelify+Sans&family=Raleway:wght@100&family=Righteous&family=Smokum&display=swap');
+
 :root {
     --cor01: #F7AD45;
     --cor02: #B60303;
@@ -6,19 +8,37 @@
 }
 
 body {
-    background-color: var(--cor04);
+    background-color: var(--cor01);
+    font-family: Pixelify Sans;
 }
 
 .bg-body-tertiary {
     background-color: var(--cor02) !important;
 }
 
+.accordion-item {
+    background-color: var(--cor01) !important;
+    color: white;
+}
+
+.accordion-button {
+    background-color: var(--cor02) !important;
+    margin: 3px;
+    color: white;
+}
+
 .active {
     color: white !important;
+    font-family: Pixelify Sans;
+}
+
+p, h4 {
+    margin: 30px;
 }
 
 .card>img {
     background-color: var(--cor01);
+    color: black !important;
 }
 
 .card {
@@ -30,24 +50,16 @@ body {
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
+    color: black !important;
 }
 
 #carouselExampleInterval {
-    max-width: 500px;
-    max-height: 300px;
-    margin: 0 auto;
+    margin: 0% auto;
+    width: 900px;
 }
 
-.grid-container {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 12vh 76vh 12vh;
-    grid-template-areas:
-        'header'
-        'main'
-        'footer';
-}
-
-.carousel-control-next, .carousel-control-prev {
-    align-items: end;
+.d-block {
+    height: 400px;
+    border-radius: 20px;
+    margin-bottom: 10px;
 }
